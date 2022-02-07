@@ -90,10 +90,10 @@ h1.title {
     animation-fill-mode: both; }
 
 .score-container:after {
-  content: "Score"; }
+  content: "当前分数"; }
 
 .best-container:after {
-  content: "Best"; }
+  content: "最高分"; }
 
 p {
   margin-top: 0;
@@ -117,7 +117,9 @@ hr {
 
 .container {
   width: 500px;
-  margin: 0 auto; }
+  margin: 0 auto; 
+  margin-top: 20vw;
+}
 
 @-webkit-keyframes fade-in {
   0% {
@@ -547,7 +549,12 @@ hr {
 
   .container {
     width: 280px;
-    margin: 0 auto; }
+    padding-top: env(safe-area-inset-top);
+    padding-top: constant(safe-area-inset-top);
+    margin: 0 auto; 
+    margin-top: 20vw;
+  }
+    
 
   .score-container, .best-container {
     margin-top: 0;
@@ -555,7 +562,9 @@ hr {
     min-width: 40px; }
 
   .heading {
-    margin-bottom: 10px; }
+    margin-top: 4vw;
+    margin-bottom: 5vw; 
+  }
 
   .game-intro {
     width: 55%;
@@ -571,7 +580,7 @@ hr {
     margin-top: 2px; }
 
   .game-container {
-    margin-top: 17px;
+    margin-top: 5vw;
     position: relative;
     padding: 10px;
     cursor: default;
